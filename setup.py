@@ -9,16 +9,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "gym"))
 from version import VERSION
 
 # Environment-specific dependencies.
-extras = {
-    "atari": ["ale-py~=0.7.1"],
-    "accept-rom-license": ["autorom[accept-rom-license]~=0.4.2"],
-    "box2d": ["box2d-py==2.3.5", "pyglet>=1.4.0"],
-    "classic_control": ["pyglet>=1.4.0"],
-    "mujoco": ["mujoco_py>=1.50, <2.0"],
-    "robotics": ["mujoco_py>=1.50, <2.0"],
-    "toy_text": ["scipy>=1.4.1"],
-    "other": ["lz4>=3.1.0", "opencv-python>=3."],
-}
+extras = {}
 
 # Meta dependency groups.
 nomujoco_blacklist = set(["mujoco", "robotics", "accept-rom-license"])
